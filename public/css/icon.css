@@ -1,0 +1,477 @@
+:root {
+    --color-ash: #6c757d;
+    --color-black: #484848;
+    --color-theme: #00897b;
+    --color-offWhite: #b5b5b5;
+    --color-blueShade: #56b4e4;
+    --color-white: #ffffff;
+    --color-red: #d32f2f;
+    --color-green: #00c853;
+    --color-lightBlue: #0277BD;
+    --color-orange: #FFAB91;
+}
+
+.bg-color-ash {
+    background: var(--color-ash) !important;
+}
+
+.bg-color-black {
+    background: var(--color-black) !important;
+}
+
+.bg-color-offWhite {
+    background: var(--color-offWhite) !important;
+}
+
+.color-blueshade {
+    background-color: var(--color-blueShade) !important;
+}
+
+.icon {
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    display: inline-block;
+}
+
+.eye-slash-regular {
+    -webkit-mask-image: url(/img/icon_image/eye-slash-regular.svg);
+    mask-image: url(/img/icon_image/eye-slash-regular.svg);
+    background: var(--color-ash);
+}
+
+.eye-regular {
+    -webkit-mask-image: url(/img/icon_image/eye-regular.svg);
+    mask-image: url(/img/icon_image/eye-slash-regular.svg);
+    background: var(--color-ash);
+}
+
+.youtube-outline {
+    -webkit-mask-image: url(/img/icon_image/youtube.svg);
+    mask-image: url(/img/icon_image/youtube.svg);
+    background: var(--color-offWhite);
+}
+
+.instagram-outline {
+    -webkit-mask-image: url(/img/icon_image/instagram.svg);
+    mask-image: url(/img/icon_image/instagram.svg);
+    background: var(--color-offWhite);
+}
+
+.instagram {
+    -webkit-mask-image: url(/img/icon_image/instagram-fill.svg);
+    mask-image: url(/img/icon_image/instagram-fill.svg);
+    background: var(--color-offWhite);
+}
+
+.pencil-icon {
+    -webkit-mask-image: url(/img/icon_image/pencil-icon.svg);
+    mask-image: url(/img/icon_image/pencil-icon.svg);
+    background: var(--color-ash);
+}
+
+.facebook-outline {
+    -webkit-mask-image: url(/img/icon_image/facebook.svg);
+    mask-image: url(/img/icon_image/facebook.svg);
+    background: var(--color-offWhite);
+}
+
+.facebook {
+    -webkit-mask-image: url(/img/icon_image/facebook-fill.svg);
+    mask-image: url(/img/icon_image/facebook-fill.svg);
+}
+
+.linkedin {
+    -webkit-mask-image: url(/img/icon_image/linkedin.svg);
+    mask-image: url(/img/icon_image/linkedin.svg);
+}
+
+.trash-outline {
+    -webkit-mask-image: url(/img/icon_image/trash-outline.svg);
+    mask-image: url(/img/icon_image/trash-outline.svg);
+    background: var(--color-ash);
+}
+
+.supplierHub-outline {
+    -webkit-mask-image: url(/img/icon_image/supplier-hub.svg);
+    mask-image: url(/img/icon_image/supplier-hub.svg);
+    background: var(--color-ash);
+}
+
+.list-group {
+    -webkit-mask-image: url(/img/icon_image/list-group.svg);
+    mask-image: url(/img/icon_image/list-group.svg);
+    background: var(--color-blueShade);
+}
+
+.bar-solid {
+    -webkit-mask-image: url(/img/icon_image/bar-solid.svg);
+    mask-image: url(/img/icon_image/bar-solid.svg);
+    background: var(--color-blueShade);
+}
+
+.circle-plus {
+    -webkit-mask-image: url(/img/icon_image/circle-plus.svg);
+    mask-image: url(/img/icon_image/circle-plus.svg);
+    background: var(--color-ash);
+}
+
+.settings-icon {
+    -webkit-mask-image: url(/img/icon_image/settings.svg);
+    -webkit-mask-image: url(/img/icon_image/settings.svg);
+    mask-image: url(/img/icon_image/settings.svg);
+}
+
+.add {
+    -webkit-mask-image: url(/img/icon_image/add.svg);
+    mask-image: url(/img/icon_image/add.svg);
+}
+
+.circle-minus {
+    -webkit-mask-image: url(/img/icon_image/circle-minus.svg);
+    mask-image: url(/img/icon_image/circle-minus.svg);
+    background: var(--color-ash);
+}
+
+.bg-blueShade {
+    background: var(--color-blueShade);
+}
+
+
+.phone {
+    -webkit-mask-image: url(/img/icon_image/phone.svg);
+    mask-image: url(/img/icon_image/phone.svg);
+    background: var(--color-ash);
+}
+
+.envelope {
+    -webkit-mask-image: url(/img/icon_image/envelope.svg);
+    mask-image: url(/img/icon_image/envelope.svg);
+    background: var(--color-ash);
+}
+
+.history-icon {
+    -webkit-mask-image: url(/img/icon_image/history-icon.svg);
+    mask-image: url(/img/icon_image/history-icon.svg);
+    background: var(--color-ash);
+}
+
+.search-icon {
+    -webkit-mask-image: url(/img/icon_image/search-icon.svg);
+    mask-image: url(/img/icon_image/search-icon.svg);
+    background: var(--color-white);
+}
+
+.external-link {
+    -webkit-mask-image: url(/img/icon_image/external-link.svg);
+    mask-image: url(/img/icon_image/external-link.svg);
+    background: var(--color-blueShade);
+}
+
+.fa-check {
+    -webkit-mask-image: url(/img/icon_image/check-icon.svg);
+    mask-image: url(/img/icon_image/check-icon.svg);
+    background: var(--color-green);
+}
+
+.fa-times {
+    -webkit-mask-image: url(/img/icon_image/times-icon.svg);
+    mask-image: url(/img/icon_image/times-icon.svg);
+    background: var(--color-red);
+}
+
+.export-icon {
+    -webkit-mask-image: url(/img/icon_image/export-icon.svg);
+    mask-image: url(/img/icon_image/export-icon.svg);
+    background: var(--color-blueShade);
+}
+
+.task-icon {
+    -webkit-mask-image: url(/img/icon_image/task-icon.svg);
+    mask-image: url(/img/icon_image/task-icon.svg);
+    background: var(--color-blueShade);
+}
+
+.arrow-left {
+    -webkit-mask-image: url(/img/icon_image/arrow-left.svg);
+    mask-image: url(/img/icon_image/arrow-left.svg);
+    background: var(--color-blueShade);
+}
+
+.arrow-down {
+    -webkit-mask-image: url(/img/icon_image/arrow-down.svg);
+    mask-image: url(/img/icon_image/arrow-down.svg);
+    background: var(--color-red);
+}
+
+.arrow-up {
+    -webkit-mask-image: url(/img/icon_image/arrow-up.svg);
+    mask-image: url(/img/icon_image/arrow-tup.svg);
+    background: var(--color-green);
+}
+
+.angle-right {
+    -webkit-mask-image: url(/img/icon_image/angle-right.svg);
+    mask-image: url(/img/icon_image/angle-right.svg);
+    background: var(--color-ash);
+}
+
+.minus {
+    -webkit-mask-image: url(/img/icon_image/arrow-minus.svg);
+    mask-image: url(/img/icon_image/arrow-minus.svg);
+    background: var(--color-ash);
+}
+
+.document {
+    -webkit-mask-image: url(/img/icon_image/document.svg);
+    mask-image: url(/img/icon_image/document.svg);
+    background: var(--color-ash);
+}
+
+.file-image {
+    -webkit-mask-image: url(/img/icon_image/file-image.svg);
+    mask-image: url(/img/icon_image/file-image.svg);
+    background: var(--color-ash);
+}
+
+.settings {
+    -webkit-mask-image: url(/img/icon_image/settings.svg);
+    mask-image: url(/img/icon_image/settings.svg);
+    background: var(--color-blueShade);
+}
+
+.user {
+    -webkit-mask-image: url(/img/icon_image/user.svg);
+    mask-image: url(/img/icon_image/user.svg);
+    background: var(--color-ash);
+}
+
+.unlock {
+    -webkit-mask-image: url(/img/icon_image/unlock.svg);
+    mask-image: url(/img/icon_image/unlock.svg);
+    background: var(--color-ash);
+}
+
+.log-out {
+    -webkit-mask-image: url(/img/icon_image/log-out.svg);
+    mask-image: url(/img/icon_image/log-out.svg);
+    background: var(--color-ash);
+}
+
+.chevron-up-circle {
+    -webkit-mask-image: url(/img/icon_image/chevron-up-circle.svg);
+    mask-image: url(/img/icon_image/chevron-up-circle.svg);
+}
+
+.chevron-down-circle {
+    -webkit-mask-image: url(/img/icon_image/chevron-down-circle.svg);
+    mask-image: url(/img/icon_image/chevron-down-circle.svg);
+}
+
+.chevron-up {
+    -webkit-mask-image: url(/img/icon_image/chevron-up.svg);
+    mask-image: url(/img/icon_image/chevron-up.svg);
+}
+
+.chevron-down {
+    -webkit-mask-image: url(/img/icon_image/chevron-down.svg);
+    mask-image: url(/img/icon_image/chevron-down.svg);
+}
+
+.select-icon {
+    -webkit-mask-image: url(/img/icon_image/select.svg);
+    mask-image: url(/img/icon_image/select.svg);
+}
+
+.info-icon {
+    -webkit-mask-image: url(/img/icon_image/info.svg);
+    mask-image: url(/img/icon_image/info.svg);
+}
+
+.clip-icon {
+    -webkit-mask-image: url(/img/icon_image/clip.svg);
+    mask-image: url(/img/icon_image/clip.svg);
+}
+
+.comment-icon {
+    -webkit-mask-image: url(/img/icon_image/comment.svg);
+    mask-image: url(/img/icon_image/comment.svg);
+    background: var(--color-ash);
+}
+
+.item-transfer {
+    -webkit-mask-image: url(/img/icon_image/item-transfer.svg);
+    mask-image: url(/img/icon_image/item-transfer.svg);
+    background: var(--color-ash);
+}
+
+.camera-icon {
+    -webkit-mask-image: url(/img/icon_image/camera-solid.svg);
+    mask-image: url(/img/icon_image/camera-solid.svg);
+}
+
+.calendar-icon {
+    -webkit-mask-image: url(/img/icon_image/calendar.svg);
+    mask-image: url(/img/icon_image/calendar.svg);
+}
+
+.store-icon {
+    -webkit-mask-image: url(/img/icon_image/store.svg);
+    mask-image: url(/img/icon_image/store.svg);
+    background: var(--color-ash);
+}
+
+.clock {
+    -webkit-mask-image: url(/img/icon_image/clock.svg);
+    mask-image: url(/img/icon_image/clock.svg);
+    background: var(--color-ash);
+}
+
+.publish-icon {
+    -webkit-mask-image: url(/img/icon_image/publish.svg);
+    mask-image: url(/img/icon_image/publish.svg);
+    background: var(--color-ash);
+}
+
+.download-icon {
+    -webkit-mask-image: url(/img/icon_image/download.svg);
+    mask-image: url(/img/icon_image/download.svg);
+    background: var(--color-ash);
+}
+
+.duplicate-icon {
+    -webkit-mask-image: url(/img/icon_image/duplicate.svg);
+    mask-image: url(/img/icon_image/duplicate.svg);
+    background: var(--color-ash);
+}
+
+.send-icon {
+    -webkit-mask-image: url(/img/icon_image/send.svg);
+    mask-image: url(/img/icon_image/send.svg);
+    background: var(--color-ash);
+}
+
+.issue-icon {
+    -webkit-mask-image: url(/img/icon_image/issue.svg);
+    mask-image: url(/img/icon_image/issue.svg);
+    background: var(--color-ash);
+    transform: rotate(180deg);
+}
+
+.receive-icon {
+    -webkit-mask-image: url(/img/icon_image/receive.svg);
+    mask-image: url(/img/icon_image/receive.svg);
+    background: var(--color-ash);
+}
+
+.report-icon {
+    -webkit-mask-image: url(/img/icon_image/report.svg);
+    mask-image: url(/img/icon_image/report.svg);
+    background: var(--color-ash);
+}
+
+
+.stock-out-icon{
+    -webkit-mask-image: url(/img/icon_image/stock-out.svg);
+    mask-image: url(/img/icon_image/stock-out.svg);
+    background: var(--color-lightBlue);
+}
+
+.adjustment-icon{
+    -webkit-mask-image: url(/img/icon_image/adjustment.svg);
+    mask-image: url(/img/icon_image/adjustment.svg);
+    background: var(--color-orange);
+}
+
+.icon-size {
+    height: 16px;
+    width: 20px;
+}
+
+.icon-size-square {
+    height: 16px;
+    width: 16px;
+}
+
+.icon-size-1 {
+    height: 16px;
+    width: 14px;
+}
+
+.icon-size-2 {
+    height: 14px;
+    width: 14px;
+}
+
+.icon-size-14 {
+    height: 14px;
+    width: 12px;
+}
+
+.icon-size-3 {
+    height: 10px;
+    width: 8px;
+}
+
+.icon-size-4 {
+    height: 16px;
+    width: 12px;
+}
+
+.icon-size-5 {
+    height: 16px;
+    width: 8px;
+}
+
+.icon-size-6 {
+    height: 14px;
+    width: 12px;
+}
+
+.icon-size-7 {
+    height: 18px;
+    width: 18px;
+}
+
+.icon-size-24 {
+    height: 24px;
+    width: 24px;
+}
+
+.icon-size-32 {
+    height: 32px;
+    width: 32px;
+}
+
+.social-icon {
+    height: 36px;
+    width: 36px;
+}
+.icon-size-file {
+    height: 14px;
+    width: 10px;
+    top: 2px;
+    position: relative;
+}
+
+.icon-size-12 {
+    height: 12px;
+    width: 12px;
+}
+
+.icon-size-20 {
+    height: 20px;
+    width: 18px;
+    background-color: #999;
+}
+
+.duplicate-icon {
+    -webkit-mask-image: url(/img/icon_image/duplicate.svg);
+    mask-image: url(/img/icon_image/duplicate.svg);
+    background: var(--color-ash);
+}
+
+.lock {
+    -webkit-mask-image: url(/img/icon_image/lock.svg);
+    mask-image: url(/img/icon_image/lock.svg);
+    background: var(--color-ash);
+}

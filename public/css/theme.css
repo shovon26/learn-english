@@ -1,0 +1,30 @@
+.theme-background{
+    background: #00897b !important;
+}
+.theme-color{
+    color:#00897b !important;
+}
+.theme-border{
+    border:1px solid #00897B !important;
+}
+.theme-animation-background{
+    border: 1px solid black;
+    border-radius: 2px !important;
+    padding: .400rem .85rem !important;
+    font-size: 1rem !important;
+    cursor:pointer;
+    color:#00897b !important;
+    display: block;
+  
+    background: linear-gradient(to right, #00897B 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+.theme-animation-background:hover{
+    background-position: left bottom;
+    color:#ffffff !important;
+}
+.theme-animation-background .animation-text:hover{
+    color: #ffffff;
+}

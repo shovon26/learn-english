@@ -1,0 +1,105 @@
+:root {
+    --border-color: rgba(0,0,0,.07);
+}
+
+.body{
+
+    min-height: 100vh;
+    background-color: #f2f5f7;
+}
+.select-shop{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.restaurant-list-body{
+    width: 28rem;
+    /* border: 1px solid var(--border-color); */
+    border-radius: 4px;
+    position: relative;
+    background-color: #ffffff;
+    margin: 48px 0px;
+    /* box-shadow: 0px 0px 2px #bdbdbd;*/
+}
+.restaurant-list-body .header{
+    padding: 15px 10px 12px 12px;
+    border-bottom: 1px solid var(--border-color);
+}
+.restaurant-list-body .header p{
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+/* .restaurant-list-body .restaurants{
+    height: 460px;
+    overflow-y: auto;
+    margin-bottom: 56px;
+} */
+
+.list-body{
+    display: flex;
+    align-items: center;
+    padding: 10px 32px;
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+    background-position: center;
+    /* transition: background 0.8s; */
+}
+/* .list-body:last-child{
+    border-bottom: none !important;
+} */
+.list-body:hover{
+    background: #f7f7f7;
+    border-radius: 4px;
+    background: #f7f7f7 radial-gradient(circle, transparent 1%, #f7f7f7 1%) center/15000%;
+}
+.list-body:active{
+    background-color: #ececec;
+    background-size: 100%;
+    /* transition: background 0s; */
+}
+.list-body .restaurant-logo img{
+    /* height: 42px; */
+    width: 44px;
+    border-radius: 3px;
+}
+.chain-list{
+    padding: 15px 32px;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+    background-position: center;
+}
+.chain-list:hover{
+    background: #f7f7f7;
+    border-radius: 4px;
+    background: #f7f7f7 radial-gradient(circle, transparent 1%, #f7f7f7 1%) center/15000%;
+}
+.restaurant-info {
+    padding: 0 0px 0 22px;
+}
+.restaurant-info p{
+    margin-bottom: 0;
+    color: var(--font-color);
+}
+.restaurant-info p:last-child{
+    margin-bottom: 0;
+    color: var(--text-muted);
+}
+.back-to-login {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    background: var(--theme-color);
+    padding: 8px 24px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.back-to-login span{
+    margin-right: 8px;
+    vertical-align: middle;
+    color: #ffffff;
+}
+
+.footer-text{
+    padding: 18px 18px 38px 38px;
+}

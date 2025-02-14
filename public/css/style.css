@@ -1,0 +1,222 @@
+#body_content {
+    z-index: 30;
+}
+body {
+    font-family: 'Segoe UI',Tahoma,Helvetica,Sans-Serif;
+    text-align: left;
+    /*font-size: 1.0vw;*/
+}
+
+.zf-green {
+    color: #68b604;
+}
+
+.asea:hover{cursor: pointer !important; text-decoration: underline}
+.ase:hover{cursor: pointer !important; text-decoration: underline;background-color: #EEEEEE}
+textarea {
+	
+    padding: 6px ;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+   
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.profile_sec
+{
+    alignment: right;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+.createDate {
+	color: #999;
+	margin-left:2px;
+	margin-right:2px;
+	font-size: 13px;
+	
+}
+.desc {
+	margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left:2px;
+    margin-right:2px;
+}
+.title {
+	font-size: 1.2vw;
+	color: #24B9FF;
+	cursor: pointer;
+}
+
+.darkText{
+	color:#000000;
+}
+.red {
+	color : #D44E50;
+}
+.green {
+	color : #2dbe60;
+}
+.blue {
+	color : #007FFF;
+}
+.rowcol {
+	margin: 10px;
+	
+}
+.leftrow {
+	margin-left: 20px;
+	margin-right:10px;
+}
+.checkbText {
+	padding: 0px;
+	margin:0px; 
+	margin-left:30px;
+	margin-top: -23px;
+}
+.sticky
+{
+	background-color: #eee;
+	margin: 5px;
+	padding:15px;
+	border-radius:5px;
+	margin-left:10px;
+}
+.stickyView {
+    background-color: #eee;
+    margin: 0px;
+    padding: 15px;
+    padding-left: 0px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.btn-success {
+  background-color: #57a900;
+  background-image: -moz-linear-gradient(top, #70d900, #57a900);
+  background-image: -ms-linear-gradient(top, #70d900, #57a900);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#70d900), to(#57a900));
+  background-image: -webkit-linear-gradient(top, #70d900, #57a900);
+  background-image: -o-linear-gradient(top, #70d900, #57a900);
+  background-image: linear-gradient(top, #70d900, #57a900);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70d900', endColorstr='#57a900', GradientType=0);
+}
+
+.btn-success:hover,
+.btn-success:active,
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled] {
+  background-color: #57a900;
+}
+
+.btn-success:active, .btn-success.active {
+  background-color: #57a900;
+}
+
+div.container a.brand {
+    background: url("../img/zf2-logo.png") no-repeat scroll 0 10px transparent;
+    margin-left: 0;
+    padding: 8px 20px 12px 40px;
+}
+.header
+{
+    height: 50px;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+}
+.footer
+{
+    height: 50px;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+}
+
+label
+{
+    text-align: left;
+    font-weight: normal;
+
+}
+
+input
+{
+
+}
+
+.button {
+    padding: 5px;
+    width : 100px;
+    height: 30px;
+    background-color: #285e8e;
+    color: #ffffff;
+    border :none;
+
+}
+.form-group {
+
+    width:100%;
+
+
+}
+ul {
+
+    float: right;
+}
+ul li{
+    margin-left: 0;
+    padding-left: 0px;
+    text-align: left;
+}
+
+/*code for chat notification ui*/
+@-webkit-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-moz-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+.objblink {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+
+    -webkit-animation-direction: normal;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: blink;
+    -webkit-animation-timing-function: ease-in-out;
+
+    -moz-animation-direction: normal;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-name: blink;
+    -moz-animation-timing-function: ease-in-out;
+}
+/*code for chat notification ui*/

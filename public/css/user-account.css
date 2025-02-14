@@ -1,0 +1,118 @@
+.avatar{
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    text-align: center;
+    height: 120px;
+}
+.shop-logo{
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    height: 40px;
+}
+.edit {
+    position: absolute;
+    top: 190px;
+    left: 75px;
+    cursor: pointer;
+}
+
+.form-control-account{
+    font-size: 1rem;
+    height: calc(1.85em + 1rem);
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    border: 1px solid #ced4da;
+}
+
+.image_area {
+    position: relative;
+}
+
+.modal img {
+    display: block;
+    max-width: 100%;
+}
+
+.preview {
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    margin: 10px;
+    border: 1px solid red;
+}
+
+.modal-lg{
+    max-width: 1000px !important;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    height: 0;
+    transition: .5s ease;
+    width: 100%;
+}
+
+.image_area:hover .overlay {
+    height: 50%;
+    cursor: pointer;
+}
+
+.text {
+    color: #333;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#sample-image{
+    width:50%;
+}
+
+.eye-icon{
+    cursor: pointer;
+    position:absolute;
+    z-index:10;
+    right:5px;
+    top:15px;
+    font-weight:100;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table tr{
+    border-bottom: 1px solid rgba(0,0,0,.07);
+}
+
+table tr:last-child{
+    border-bottom: none;
+}
+
+
+@media screen and (max-width: 576px) {
+    .edit {
+        top: 212px;
+        left: 75px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .w-md-70 {
+        width: 70% !important;
+    }
+    .w-md-60 {
+        width: 60% !important;
+    }
+}
