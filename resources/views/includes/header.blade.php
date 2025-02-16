@@ -71,6 +71,9 @@
     body {
         padding-top: 70px;
     }
+    .nav-item .active{
+        color: #ff7e5f !important;
+    }
 </style>
 
 <header>
@@ -78,8 +81,8 @@
         <div class="container">
             <!-- Logo and Title -->
             <a class="navbar-brand d-flex align-items-center" href="{{ url('/home') }}">
-                <img src="{{ \App\Helpers\asset('/img/success-icon.png') }}" alt="Lingo AI Logo">
-                <span class="ms-2 fw-bold" style="font-size: 1.4rem;">Lingo AI</span>
+                <img src="{{ \App\Helpers\asset('/img/logo.png') }}" alt="SpeakEra AI Logo">
+{{--                <span class="ms-2 fw-bold" style="font-size: 1.4rem;">SpeakEra AI</span>--}}
             </a>
 
             <!-- Mobile Menu Toggle -->
@@ -94,14 +97,14 @@
                         <a href="{{ url('/home') }}" class="nav-link {{ Request::is('home') ? 'active' : '' }}">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url('/features') }}" class="nav-link">Features</a>
+                        <a href="{{ url('/speak-ai-agent') }}" class="nav-link {{ Request::is('speak-ai-agent') ? 'active' : '' }}">Speak Now</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="{{ url('/about') }}" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{ url('/contact') }}" class="nav-link">Contact</a>
-                    </li>
+{{--                    <li class="nav-item">--}}
+{{--                        <a href="{{ url('/about') }}" class="nav-link">About</a>--}}
+{{--                    </li>--}}
+{{--                    <li class="nav-item">--}}
+{{--                        <a href="{{ url('/contact') }}" class="nav-link">Contact</a>--}}
+{{--                    </li>--}}
                 </ul>
             </div>
         </div>

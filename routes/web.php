@@ -17,4 +17,7 @@ Route::namespace('\App\Http\Controllers')->group(function () {
         return redirect()->route('/home');
     });
     Route::get('/home', 'DashboardController@indexAction')->name('home');
+    Route::get('/speak-ai-agent', 'SpeakController@indexAction')->name('speak-ai-agent');
+    Route::get('/subscription-plan', 'SpeakController@subscriptionPlanIndex')->name('/subscription-plan');
+    Route::post('/api/process-voice',  'SpeakController@processVoice');
 });

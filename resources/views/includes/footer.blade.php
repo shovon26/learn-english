@@ -18,7 +18,7 @@
     <div class="container text-center">
         <div class="row">
             <div class="col-md-6 text-start">
-                <p class="mb-0">&copy; {{ date('Y') }} Lingo AI. All Rights Reserved.</p>
+                <p class="mb-0">&copy; {{ date('Y') }} SpeakEra AI. All Rights Reserved.</p>
             </div>
             <div class="col-md-6 text-end">
                 <a href="{{ url('/privacy-policy') }}" class="footer-link me-3">Privacy Policy</a>
