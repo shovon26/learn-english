@@ -69,7 +69,7 @@
 
     /* Page content padding to prevent overlap */
     body {
-        padding-top: 70px;
+        /*padding-top: 70px;*/
     }
     .nav-item .active{
         color: #ff7e5f !important;
@@ -77,37 +77,40 @@
 </style>
 
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <!-- Logo and Title -->
-            <a class="navbar-brand d-flex align-items-center" href="{{ url('/home') }}">
-                <img src="{{ \App\Helpers\asset('/img/logo.png') }}" alt="SpeakEra AI Logo">
+    <nav class="sticky-top">
+        <div style="cursor: pointer" onclick="window.location.href='{{ url('/home') }}'">
+            <img style="width: 100%; height: 120px" src="{{\App\Helpers\asset('/img/header-01.png')}}" alt="header">
+        </div>
+{{--        <div class="container">--}}
+{{--            <!-- Logo and Title -->--}}
+{{--            <a class="navbar-brand d-flex align-items-center" href="{{ url('/home') }}">--}}
+{{--                <img src="{{ \App\Helpers\asset('/img/logo.png') }}" alt="SpeakEra AI Logo">--}}
 {{--                <span class="ms-2 fw-bold" style="font-size: 1.4rem;">SpeakEra AI</span>--}}
-            </a>
+{{--            </a>--}}
 
-            <!-- Mobile Menu Toggle -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+{{--            <!-- Mobile Menu Toggle -->--}}
+{{--            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">--}}
+{{--                <span class="navbar-toggler-icon"></span>--}}
+{{--            </button>--}}
 
-            <!-- Navbar Menu -->
-            <div class="collapse navbar-collapse" id="navMenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="{{ url('/home') }}" class="nav-link {{ Request::is('home') ? 'active' : '' }}">Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{ url('/speak-ai-agent') }}" class="nav-link {{ Request::is('speak-ai-agent') ? 'active' : '' }}">Speak Now</a>
-                    </li>
+{{--            <!-- Navbar Menu -->--}}
+{{--            <div class="collapse navbar-collapse" id="navMenu">--}}
+{{--                <ul class="navbar-nav ms-auto">--}}
+{{--                    <li class="nav-item">--}}
+{{--                        <a href="{{ url('/home') }}" class="nav-link {{ Request::is('home') ? 'active' : '' }}">Dashboard</a>--}}
+{{--                    </li>--}}
+{{--                    <li class="nav-item">--}}
+{{--                        <a href="{{ url('/speak-ai-agent') }}" class="nav-link {{ Request::is('speak-ai-agent') ? 'active' : '' }}">Speak Now</a>--}}
+{{--                    </li>--}}
 {{--                    <li class="nav-item">--}}
 {{--                        <a href="{{ url('/about') }}" class="nav-link">About</a>--}}
 {{--                    </li>--}}
 {{--                    <li class="nav-item">--}}
 {{--                        <a href="{{ url('/contact') }}" class="nav-link">Contact</a>--}}
 {{--                    </li>--}}
-                </ul>
-            </div>
-        </div>
+{{--                </ul>--}}
+{{--            </div>--}}
+{{--        </div>--}}
     </nav>
 </header>
 

@@ -1,127 +1,66 @@
-@extends('layouts.app')
-@section('title', 'SpeakEra AI')
-
-@section('styles')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SpeakEra AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .hero-section {
-            background: linear-gradient(to right, #1e3c72, #2a5298);
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Container to ensure full image visibility */
+        .image-container {
+            width: 100%;
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Full-height Image */
+        .home-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Floating Button */
+        .btn-float {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #e91e63;
             color: white;
-            text-align: center;
-            padding: 60px 20px;
-            border-radius: 10px;
+            padding: 12px 30px;
+            font-size: 18px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        .feature-card {
-            border: none;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .voice-input {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .voice-btn {
-            background-color: #ff7f50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1.2rem;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .voice-btn:hover {
-            background-color: #ff6347;
+        .btn-float:hover {
+            background-color: #d81b60;
+            transform: translateX(-50%) scale(1.05);
         }
     </style>
-@stop
+</head>
+<body>
 
-@section('content')
-    <div class="container py-4" style="min-height: 1000px">
-        <!-- Hero Section -->
-        <div class="hero-section">
-            <h1>Welcome to SpeakEra AI</h1>
-            <p>Your AI-powered assistant for mastering spoken English</p>
-            <button class="voice-btn" id="startSpeech" onclick="window.location.href='{{url('/speak-ai-agent')}}'">🎤 Speak Now</button>
-            <p id="transcription" class="mt-3"></p>
-        </div>
+<!-- Full Image with Scroll -->
+<div class="image-container">
+    <img src="{{ \App\Helpers\asset('/img/home-page.png') }}" class="home-image" alt="SpeakEra AI Homepage">
+</div>
 
-        <!-- Features Section -->
-        <div class="row mt-5">
-            <div class="col-md-4">
-                <div class="card feature-card p-3">
-                    <h4>🎤 Voice Communication & Feedback</h4>
-                    <p>Get real-time feedback on pronunciation, fluency, and grammar.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card feature-card p-3">
-                    <h4>🗣️ Real-Time Conversation</h4>
-                    <p>Engage in AI-powered conversations to improve English speaking skills.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card feature-card p-3">
-                    <h4>📅 Task Scheduling & Exams</h4>
-                    <p>Practice with AI-scheduled tasks and take automated exams.</p>
-                </div>
-            </div>
-        </div>
+<!-- Floating Button -->
+<a href="/sign-up" class="btn btn-float">Start Conversation</a>
 
-        <div class="row mt-4">
-            <div class="col-md-4">
-                <div class="card feature-card p-3">
-                    <h4>📊 Progress Tracking</h4>
-                    <p>Monitor your learning progress with detailed analytics.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card feature-card p-3">
-                    <h4>🌎 AI-Powered Translation</h4>
-                    <p>Translate content to your native language for better understanding.</p>
-                </div>
-            </div>
-            <div class="col-md-4 cursor-pointer" onclick="window.location.href='{{url('/subscription-plan')}}'">
-                <div class="card feature-card p-3">
-                    <h4>💳 Purchase Plans</h4>
-                    <p>Choose from different learning plans to suit your needs.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-@endsection
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 
-@section('scripts')
-    <script>
-        $(document).ready(function() {
-            const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
-            recognition.lang = 'en-US';
-            recognition.interimResults = false;
-            recognition.continuous = false;
-
-            $('#startSpeech').on('click', function() {
-                $('#transcription').text("Listening...");
-                recognition.start();
-            });
-
-            recognition.onresult = function(event) {
-                const speechResult = event.results[0][0].transcript;
-                $('#transcription').text("You said: " + speechResult);
-            };
-
-            recognition.onerror = function(event) {
-                $('#transcription').text("Error occurred: " + event.error);
-            };
-        });
-    </script>
-@stop

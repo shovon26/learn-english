@@ -14,17 +14,22 @@
     }
 </style>
 
-<footer class="footer">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-md-6 text-start">
-                <p class="mb-0">&copy; {{ date('Y') }} SpeakEra AI. All Rights Reserved.</p>
-            </div>
-            <div class="col-md-6 text-end">
-                <a href="{{ url('/privacy-policy') }}" class="footer-link me-3">Privacy Policy</a>
-                <a href="{{ url('/terms') }}" class="footer-link">Terms of Service</a>
-            </div>
+<footer class="">
+{{--    <div class="container text-center">--}}
+{{--        <div class="row">--}}
+{{--            <div class="col-md-6 text-start">--}}
+{{--                <p class="mb-0">&copy; {{ date('Y') }} SpeakEra AI. All Rights Reserved.</p>--}}
+{{--            </div>--}}
+{{--            <div class="col-md-6 text-end">--}}
+{{--                <a href="{{ url('/privacy-policy') }}" class="footer-link me-3">Privacy Policy</a>--}}
+{{--                <a href="{{ url('/terms') }}" class="footer-link">Terms of Service</a>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+    <nav class="">
+        <div>
+            <img style="width: 100%; height: 450px" src="{{\App\Helpers\asset('/img/footer-01.png')}}" alt="footer">
         </div>
-    </div>
+    </nav>
 </footer>
 
